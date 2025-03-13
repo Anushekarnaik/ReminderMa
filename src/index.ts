@@ -102,7 +102,7 @@ app.get('/reminders/not-completed', (c) => {
 });
 //Get reminders due today
 app.get('/reminders/due-today', (c) => {
-  const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+  const today = new Date().toISOString().split('T')[0]; 
 
   const dueTodayReminders = reminders.filter((r) => r.dueDate === today);
 
